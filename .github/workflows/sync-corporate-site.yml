@@ -1,6 +1,9 @@
 name: Sync corporate site assets
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/sync-corporate-site.yml'
 permissions:
   contents: write
 jobs:
